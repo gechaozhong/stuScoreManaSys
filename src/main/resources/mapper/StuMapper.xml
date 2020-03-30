@@ -14,13 +14,13 @@
 
 
 	 <select id="findAllStu" resultType="com.zhengyuan.liunao.entity.Stu">
-      select * from    Stu   order by stuno limit #{start},#{pagesize}
+      select * from    stu   order by stuno limit #{start},#{pagesize}
     </select>
     
     
 	 
 	  <select id="findAll" resultType="com.zhengyuan.liunao.entity.Stu">
-      select * from    Stu  
+      select * from    stu
     </select>
     
      <select id="findStuByName" resultType="com.zhengyuan.liunao.entity.Stu">
