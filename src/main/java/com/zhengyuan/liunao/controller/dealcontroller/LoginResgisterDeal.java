@@ -51,11 +51,14 @@ public class LoginResgisterDeal {
     @ResponseBody
 	@RequestMapping(value = "/dealLogin")
 	public String getInfo(@RequestParam(value = "num") String num, @RequestParam(value = "psw") String psw,
-			@RequestParam(value = "identify") String identify, HttpSession httpSession) {
+			 HttpSession httpSession) {
 
 		String dataJson = "fail";
+		String identify = "0";
 		if (Integer.parseInt(identify) == 0) {
 			List<Admin> adminList = new ArrayList<>();
+			System.out.println(num);
+			System.out.println(psw);
 			adminList = adminService.findAdmin(num, SecureUtil.md5(psw));
 			if (adminList.size() > 0) {
 				String account = adminList.get(0).getAccount();
