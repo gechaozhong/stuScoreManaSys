@@ -11,6 +11,7 @@ import com.zhengyuan.liunao.entity.Stu;
 @Mapper
 public interface StuMapper {
 	public List<Stu> findStu(String stuno, String psw);
+
 	public int addStu(Map map);
 	
 	
