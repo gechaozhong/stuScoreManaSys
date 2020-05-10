@@ -108,21 +108,14 @@
 											});
 										</script>
 									</td>
-									<td nowrap="" align="right">
-										<span style="font-size:12px" id="aac003SpanId">
-											<font color="red">*</font>民族:
-										</span>&nbsp;</td>
-									<td class="layui-inline">
-										<div class="layui-input-inline">
-											<select name="modules" lay-verify="required" lay-search="" style="width: 160px;" >
-												<option value="">汉族</option>
-												<option value="1">回族</option>
-												<option value="1">土家族</option>
-											</select>
+									<td nowrap="" align="right" rowspan = '2'>
+										<div style="width:90px;height:120px;border:1px solid #000;float: left;">
+											<input type="image" name="file" id="file" class="inputfile"> 
+											上传图片
+											</input>
 										</div>
 									</td>
-									
-									
+
 									
 								</tr>
 								<tr>
@@ -147,16 +140,31 @@
 												 style="width: 160px;" />
 											</div>
 										</td>
-									<td nowrap="" align="right">
+										<td nowrap="" align="right">
 											<span style="font-size:12px" id="aac003SpanId">
-												<font color="red">*</font>身份证号:
+												<font color="red">*</font>民族:
 											</span>&nbsp;</td>
 										<td class="layui-inline">
 											<div class="layui-input-inline">
-												<input type="text" name="aac004" maxlength="25" label="年龄:" required="true" value="" id="aac004" class=" x-form-text x-form-field  x-form-invalid "
-												 style="width: 320px;" />
+												<select name="modules" lay-verify="required" lay-search="" style="width: 160px;" >
+													<option value="">汉族</option>
+													<option value="1">回族</option>
+													<option value="1">土家族</option>
+												</select>
 											</div>
 										</td>
+										
+									<td nowrap="" align="right" >
+											<span style="font-size:12px" id="aac003SpanId">
+												<font color="red">*</font>身份证号:
+											</span>&nbsp;
+									</td>
+									<td class="layui-inline"  >
+											<div class="layui-input-inline">
+												<input type="text" name="aac004" maxlength="25" label="年龄:" required="true" value="" id="aac004" class=" x-form-text x-form-field  x-form-invalid "
+												 style="width: 160px;" />
+											</div>
+									</td>
 									
 								</tr>
 							</tbody>

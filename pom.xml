@@ -237,6 +237,11 @@
 
 
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<properties>
@@ -252,11 +257,7 @@
 
 
 				<configuration>
-					<encoding>UTF-8</encoding>
-					<nonFilteredFileExtensions>
-						<nonFilteredFileExtension>xlsx</nonFilteredFileExtension>
-						<nonFilteredFileExtension>xls</nonFilteredFileExtension>
-					</nonFilteredFileExtensions>
+
 				</configuration>
 
 			</plugin>
