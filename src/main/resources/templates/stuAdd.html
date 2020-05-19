@@ -19,6 +19,17 @@
 			table {
 				margin:0 auto;
 			  }
+			input,button{
+                 text-align: center;
+    　　      }
+            div{
+                 margin:0 auto;
+                 text-align: center;
+                 width:700px;
+    　　      }
+             .button_left {
+              margin-right:100px;
+    　　      }
 
 		</style>
 
@@ -186,13 +197,30 @@
 				<td rowspan = "3"  colspan = "3">    年     月     日</td>
 			</tr>
 		</table>
+
+	<div>
+		<button class="button_left" type="button">保存</button>
+		<button class="button_left" type="button">修改</button>
+		<button class="button_left" type="button" onClick="custom_close()">关闭</button>
+	</div>
 	</body>
 
 
-	
+	<script language="javascript">
+		// 这个脚本是 ie6和ie7 通用的脚本
+		function custom_close(){
+			window.opener=null;
+			window.open('../Sys/stuInfo_mf','_self');
+			window.close();
+		}
+     </script>
 	
 	
 	<script>
+
+
+
+
 	layui.use(['form', 'layedit', 'laydate'], function(){
 	  var form = layui.form
 	  ,layer = layui.layer
